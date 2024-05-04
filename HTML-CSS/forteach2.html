@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTQLMN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #teacherOutput {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+        }
+
+        #updateStatus {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SỬA THÔNG TIN GIÁO VIÊN</h1>
+        <div id="updateStatus"></div>
+        <button onclick="teacherLinkedList.deleteTeacherByID()">Xóa giáo viên dựa trên ID</button>
+        <button onclick="teacherLinkedList.printToWindowT()">Cập nhật danh sách</button>
+    </div>
+
+    <div id="teacherOutput"></div>
+    <script src="tuongtac2.js"></script>
+</body>
+
+</html>

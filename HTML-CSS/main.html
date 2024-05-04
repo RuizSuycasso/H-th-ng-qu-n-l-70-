@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTQLMN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #studentOutput {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+        }
+
+        #teacherOutput {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>QUẢN LÝ HỌC SINH</h1>
+        <button onclick="studentLinkedList.addItemFromPrompt()">Thêm học sinh</button>
+        <button onclick="studentLinkedList.printToWindow()">Danh sách học sinh</button>
+        <button><a href="Forsreach.html" class="no-color-change">Sửa thông tin học
+                sinh</a></button>
+        <button><a href="forsreach2.html" class="no-color-change">Tìm
+                kiếm</a></button>
+        <button><a href="Forstudent1.html" class="no-color-change">học phí</a></button>
+        <button>Lớp học sinh</button>
+        <div id="studentOutput"></div>
+    </div>
+
+    <!--------------------------------------------->
+    <div class="container">
+        <h1>QUẢN LÝ GIÁO VIÊN</h1>
+        <button onclick="teacherLinkedList.addItemFromPromptT()">Thêm giáo viên</button>
+        <button onclick="teacherLinkedList.printToWindowT()">Danh sách giáo viên</button>
+        <button><a href="Forteacher1.html" class="no-color-change">Tiền
+                Lương</a></button>
+        <button>Tra cứu môn của giáo viên</button>
+        <button><a href="forteach1.html" class="no-color-change">Tìm
+                kiếm</a></button>
+        <button><a href="forteach2.html" class="no-color-change">Sửa thông tin giáo
+                viên</a></button>
+        <div id="teacherOutput"></div>
+    </div>
+    <script src="tuongtac2.js"></script>
+    <script src="tuongtac.js"></script>
+</body>
+
+</html>

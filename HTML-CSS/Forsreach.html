@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForSreach</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #studentOutput {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+        }
+
+        #updateStatus {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SỬA THÔNG TIN HỌC SINH</h1>
+        <button onclick="studentLinkedList.printToWindow()">Cập nhật danh sách</button>
+        <button onclick="">Sửa thông tin của học sinh</button>
+        <button onclick="">Sửa thông tin của phụ huynh học sinh</button>
+        <button onclick="studentLinkedList.deleteStudentByID()">Xóa học sinh dựa trên ID</button>
+        <div id="updateStatus"></div>
+    </div>
+    <div id="studentOutput"></div>
+    <script src="tuongtac.js"></script>
+
+</body>
+
+</html>
